@@ -1,0 +1,111 @@
+!
+version 12.2
+no service pad
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname Cisco_3560
+!
+boot-start-marker
+boot-end-marker
+!
+enable secret 5 $1$/SaP$nnhouCkExgoODsID8B71J0
+!
+username admin privilege 15 password 0 admin
+username admin1 password 0 admin123
+!
+!
+
+no aaa new-model
+
+!
+call-home
+ ! If contact email address in call-home is configured as sch-smart-licensing@cisco.com
+ ! the email address configured in Cisco Smart License Portal will be used as contact email address to send SCH notifications.
+ contact-email-addr sch-smart-licensing@cisco.com
+ profile "CiscoTAC-1"
+  active
+  destination transport-method http
+!
+no ip domain lookup
+ip domain name ntc.com
+!
+aaa authentication login default enable
+aaa authorization exec default local 
+!
+!
+!
+aaa session-id common
+clock timezone UTC -7
+clock summer-time UTC recurring
+system mtu routing 1500
+ip routing
+ip domain-name ntc.com
+!
+!
+!
+!
+crypto pki trustpoint TP-self-signed-959340032
+ enrollment selfsigned
+ subject-name cn=IOS-Self-Signed-Certificate-959340032
+ revocation-check none
+ rsakeypair TP-self-signed-959340032
+!
+!
+crypto pki certificate chain TP-self-signed-959340032
+ certificate self-signed 01 nvram:IOS-Self-Sig#3232.cer
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+vlan internal allocation policy ascending
+!
+ip ssh version 2
+ip scp server enable
+!
+!
+
+
+
+
+
+interface Vlan1
+
+
+
+
+ ip address 172.16.0.1/24
+
+
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+!
+ip default-gateway 172.16.0.2
+ip classless
+ip http server
+ip http secure-server
+!
+!
+vstack
+!
+line con 0
+line vty 0 4
+ password admin
+ transport input ssh
+line vty 5 15
+ password admin
+ transport input ssh
+!
+end
