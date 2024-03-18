@@ -57,6 +57,22 @@ crypto pki certificate chain TP-self-signed-959340032
  certificate self-signed 01 nvram:IOS-Self-Sig#3232.cer
 !
 !
+router bgp 65252
+ bgp router-id 172.16.0.1
+
+ bgp log-neighbor-changes
+
+
+ redistribute 10.10.1.0/24 10.20.2.0/24
+
+
+ neighbor 10.10.0.30 remote-as 65253
+
+ neighbor 10.10.0.25 remote-as 65254
+
+ neighbor 10.11.11.10 remote-as 65255
+
+!
 !
 spanning-tree mode pvst
 spanning-tree extend system-id
