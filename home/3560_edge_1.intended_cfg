@@ -102,6 +102,154 @@ ip scp server enable
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+interface FastEthernet0/1
+
+
+
+
+ ip address 172.16.1.1/24
+
+
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/2
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/3
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/4
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/5
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/6
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/7
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface FastEthernet0/8
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
 interface Vlan1
 
 
