@@ -130,6 +130,13 @@ ip http secure-server
 !
 vstack
 !
+!
+ip access-list standard SSH-ACCESS
+
+ permit 172.16.0.2
+
+!
+!
 line con 0
 line vty 0 4
  password admin
