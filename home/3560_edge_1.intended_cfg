@@ -118,6 +118,8 @@ ip scp server enable
 
 
 
+
+
 interface FastEthernet0/1
 
 
@@ -235,6 +237,22 @@ interface FastEthernet0/7
 
 
 interface FastEthernet0/8
+
+
+ no ip address
+
+
+
+
+
+ negotiation auto
+ no mop enabled
+ no mop sysid
+!
+
+
+
+interface GigabitEthernet0/1
 
 
  no ip address
