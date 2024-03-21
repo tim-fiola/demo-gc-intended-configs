@@ -122,6 +122,7 @@ ip scp server enable
 
 interface FastEthernet0/1
 
+no switchport
 
 
 
@@ -142,6 +143,7 @@ interface FastEthernet0/1
 
 interface FastEthernet0/2
 
+no switchport
 
  no ip address
 
@@ -158,6 +160,7 @@ interface FastEthernet0/2
 
 interface FastEthernet0/3
 
+no switchport
 
  no ip address
 
@@ -174,6 +177,7 @@ interface FastEthernet0/3
 
 interface FastEthernet0/4
 
+no switchport
 
  no ip address
 
@@ -190,6 +194,7 @@ interface FastEthernet0/4
 
 interface FastEthernet0/5
 
+no switchport
 
  no ip address
 
@@ -206,6 +211,7 @@ interface FastEthernet0/5
 
 interface FastEthernet0/6
 
+no switchport
 
  no ip address
 
@@ -222,6 +228,7 @@ interface FastEthernet0/6
 
 interface FastEthernet0/7
 
+no switchport
 
  no ip address
 
@@ -238,6 +245,7 @@ interface FastEthernet0/7
 
 interface FastEthernet0/8
 
+no switchport
 
  no ip address
 
@@ -254,6 +262,7 @@ interface FastEthernet0/8
 
 interface GigabitEthernet0/1
 
+no switchport
 
  no ip address
 
@@ -270,6 +279,7 @@ interface GigabitEthernet0/1
 
 interface Vlan1
 
+no switchport
 
 
 
