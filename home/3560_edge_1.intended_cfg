@@ -281,21 +281,6 @@ interface FastEthernet0/8
 
 
 
-interface GigabitEthernet0/1
-
- no switchport
-
- no ip address
-
-
-
-
-
- negotiation auto
- no mop enabled
- no mop sysid
-!
-
 
 
 
