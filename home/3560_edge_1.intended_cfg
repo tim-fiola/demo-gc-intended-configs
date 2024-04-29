@@ -143,6 +143,8 @@ interface Vlan1
 
 interface FastEthernet0/1
 
+ description Core1_FE5/1
+
  no switchport
 
 
@@ -160,6 +162,8 @@ interface FastEthernet0/1
 
 
 interface FastEthernet0/2
+
+ description PLANNED::peering_AT&T
 
  no switchport
 
