@@ -284,6 +284,7 @@ interface FastEthernet0/8
 
 
 
+interface GigabitEthernet0/1
 !
 ip default-gateway 172.16.0.2
 ip classless
