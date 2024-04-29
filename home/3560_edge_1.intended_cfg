@@ -155,9 +155,6 @@ interface FastEthernet0/1
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -172,9 +169,6 @@ interface FastEthernet0/2
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -189,9 +183,6 @@ interface FastEthernet0/3
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -206,9 +197,6 @@ interface FastEthernet0/4
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -223,9 +211,6 @@ interface FastEthernet0/5
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -240,9 +225,6 @@ interface FastEthernet0/6
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -257,9 +239,6 @@ interface FastEthernet0/7
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
@@ -274,9 +253,6 @@ interface FastEthernet0/8
 
 
 
- negotiation auto
- no mop enabled
- no mop sysid
 !
 
 
