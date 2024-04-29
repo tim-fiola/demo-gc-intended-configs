@@ -163,7 +163,11 @@ interface FastEthernet0/2
 
  no switchport
 
- no ip address
+
+
+ ip address 172.18.20.1 255.255.255.0
+
+
 
 
 
