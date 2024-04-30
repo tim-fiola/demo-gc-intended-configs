@@ -211,6 +211,8 @@ interface FastEthernet0/4
 
 interface FastEthernet0/5
 
+ description Reserved for DC Expansion to fe1/5.core1.alg01
+
  no switchport
 
  no ip address
