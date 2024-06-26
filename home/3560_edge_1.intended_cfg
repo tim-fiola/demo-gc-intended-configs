@@ -143,8 +143,6 @@ interface Vlan1
 
 interface FastEthernet0/1
 
- description Core1_FE5/1
-
  no switchport
 
 
@@ -163,15 +161,9 @@ interface FastEthernet0/1
 
 interface FastEthernet0/2
 
- description PLANNED::peering_AT&T
-
  no switchport
 
-
-
- ip address 172.18.20.1 255.255.255.0
-
-
+ no ip address
 
 
 
@@ -210,8 +202,6 @@ interface FastEthernet0/4
 
 
 interface FastEthernet0/5
-
- description Reserved for DC Expansion to fe1/5.core1.alg01
 
  no switchport
 
